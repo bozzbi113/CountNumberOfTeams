@@ -7,6 +7,9 @@ function numTeams(rating) {
       j = 1,
       k = 2,
       l = rating.length;
+    if(!Array.isArray(rating)) {
+        return
+    }
     if (l < 3) {
       return 0;
     }
